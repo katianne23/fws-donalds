@@ -2,9 +2,6 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "
 import { useContext } from "react";
 import { CartContext } from "../../context/page";
 
-interface CartSheetProps {
-
-}
 const CartSheet = () => {
     const { isOpen, toggleCart, products } = useContext(CartContext);
     return (
