@@ -43,4 +43,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    @apply h-full;
+  }
 }
+
