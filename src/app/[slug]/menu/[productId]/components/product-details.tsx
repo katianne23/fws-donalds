@@ -7,7 +7,6 @@ import { ChefHatIcon, ChevronLeft, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cart";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import CartSheet from "./cart-sheet";
 
 interface ProductDetailsProps {
