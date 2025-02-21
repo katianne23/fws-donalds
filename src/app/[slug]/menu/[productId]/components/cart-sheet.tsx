@@ -1,19 +1,21 @@
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useContext } from "react";
 import { CartContext } from "../../context/page";
+import CartProductItem from "./cart-product-item";
 
 const CartSheet = () => {
     const { isOpen, toggleCart, products } = useContext(CartContext);
     return (
         <Sheet open={isOpen} onOpenChange={toggleCart}>
-            <SheetContent>
-                <SheetHeader>
-                    <SheetTitle></SheetTitle>
-                    <SheetDescription></SheetDescription>
+            <SheetContent className="w-[80%">
+                <SheetHeader className="text-left">
+                    <SheetTitle>Sacola</SheetTitle>
                 </SheetHeader>
-                {products.map(product => (
-                    <h1 key={product.id}>{product.name} - {product.quantity}</h1>
-                ))}
+                <div className="py-5">
+                    {products.map(product => (
+                        <CartProductItem key={product.id} product={product} />
+                    ))}
+                </div>
             </SheetContent>
         </Sheet>
     );
