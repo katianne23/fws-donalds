@@ -18,6 +18,7 @@ const main = async () => {
           "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQac8bHYlkBUjlHSKiuseLm2hIFzVY0OtxEPnw",
       },
     });
+    
     const combosCategory = await tx.menuCategory.create({
       data: {
         name: "Combos",

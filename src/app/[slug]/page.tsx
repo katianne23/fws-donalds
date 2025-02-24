@@ -10,7 +10,6 @@ interface RestaurantPageProps {
 const RestaurantPage = async ({ params }: RestaurantPageProps) => {
     const { slug } = await params;
 
-    //  const restaurant = await getRestaurantBySlug(slug);
     const restaurant = await db.restaurant.findUnique({ where: { slug } });
 
     if (!restaurant) {
@@ -33,7 +32,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
 
             <div className="pt-24 text-center space-y-2">
                 <h3 className="text-2xl font-semibold">
-                    Seja Bem-vindo!
+                    Seja Bem-vindo ao {restaurant.name}!
                 </h3>
                 <p className="opacity-55">
                     Escolha como prefere aproveitar sua refeição. Estamos aqui para oferecer praticidade e sabor em cada detalhe!
