@@ -8,7 +8,4 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default nextConfig; export interface RestaurantHeaderProps {
-  restaurant: Pick<Restaurant, 'name', 'coverImageUrl'>;
-}
-
+export default nextConfig;
