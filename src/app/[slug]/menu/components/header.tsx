@@ -17,7 +17,7 @@ const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
     const handleBackClick = () => router.back();
     const handleOrdersClick = () => router.push(`/${slug}/orders`);
     return (
-        <div className="relative h-[250px] w-full">
+        <div className="relative h-[250px] w-full lg:w-[600px] lg:m-auto">
             <Button
                 variant="secondary"
                 size="icon"

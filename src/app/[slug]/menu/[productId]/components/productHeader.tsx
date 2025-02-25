@@ -18,7 +18,7 @@ const ProductHeader = ({ product }: ProductHeaderProps) => {
     const handleOrdersClick = () => router.push(`/${slug}/orders`);
 
     return (
-        <div className="relative w-full min-h-[300px]">
+        <div className="relative w-full min-h-[300px] lg:w-[600px] lg:m-auto">
             <Button
                 variant="secondary"
                 size="icon"

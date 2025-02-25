@@ -22,7 +22,7 @@ const HomePage = async () => {
         </p>
       </div>
 
-      <div className="pt-14 grid grid-cols-2 gap-4">
+      <div className="pt-14 grid grid-cols-1 gap-4">
         {restaurants.map(restaurant => (
           <Link key={restaurant.id} href={`/${restaurant.slug}`}>
 
@@ -36,7 +36,7 @@ const HomePage = async () => {
                     className="object-contain"
                   />
                 </div>
-                <h2>{restaurant.name}</h2>
+                <h2 className="text-center text-lg font-medium">{restaurant.name}</h2>
               </CardContent>
             </Card>
           </Link>
